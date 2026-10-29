@@ -1,0 +1,60 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "Edit(**)",
+      "Write(**)",
+
+      "Bash(git init:*)",
+      "Bash(git status:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+      "Bash(git stash:*)",
+      "Bash(git config:*)",
+
+      "Bash(python backtest.py:*)",
+      "Bash(python -m py_compile:*)",
+      "Bash(pip install:*)",
+      "Bash(dir:*)",
+      "Bash(type:*)",
+      "Bash(findstr:*)"
+    ],
+
+    "deny": [
+      "Read(.env)",
+      "Read(./.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Edit(.env)",
+      "Write(.env)",
+
+      "Bash(git push:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+
+      "Bash(rm -rf:*)",
+      "Bash(del:*)",
+      "Bash(rmdir:*)",
+
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(type .env:*)",
+      "Bash(cat .env:*)"
+    ],
+
+    "ask": [
+      "Bash(python bot_scalp.py:*)",
+      "Bash(python bot.py:*)"
+    ],
+
+    "defaultMode": "default"
+  }
+}

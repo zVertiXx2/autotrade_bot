@@ -1,0 +1,44 @@
+# ============================================
+# RAHASIA — jangan pernah masuk git
+# ============================================
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ============================================
+# Data & log — besar, berubah terus, dan
+# journal itu hasil eksperimen bukan kode
+# ============================================
+data/
+*.log
+*.log.*
+# pola lebar biar arsip hasil backtest yang
+# di-rename manual ikut ke-ignore
+backtest_trad*.json
+
+# journal SENGAJA di-ignore biar riwayat git
+# nggak penuh sama perubahan data tiap menit.
+# Backup manual kalau mau diarsipkan.
+journal_scalp.jsonl
+journal*.jsonl
+
+# Hasil Teacher Bot — bisa berisi kutipan buku/materi berhak cipta
+knowledge.md
+brain.txt
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.pyc
+venv/
+.venv/
+.pytest_cache/
+
+# ============================================
+# Claude Code — settings.local.json itu
+# preferensi pribadi, jangan di-commit
+# ============================================
+.claude/settings.local.json
